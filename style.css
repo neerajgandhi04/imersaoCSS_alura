@@ -63,12 +63,12 @@ header {
 
 .site-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .site-subtitle {
     font-family: 'Quicksand', sans-serif;
-    ;
+    font-size: 2em;
     color: rgb(200, 200, 200);
 }
 
