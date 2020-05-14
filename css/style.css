@@ -97,6 +97,7 @@ header {
 
 .portfolio {
     padding: 2em;
+    height: 100vh;
 }
 
 .portfolio h2 {
@@ -110,7 +111,8 @@ header {
 
 .portfolio .grid {
     display: grid;
-    gap: 2em;
+    gap: 3em;
+    justify-content: center;
 }
 
 @media(min-width: 560px) {
@@ -121,7 +123,10 @@ header {
 
 @media(min-width: 880px) {
     .portfolio .grid {
-        grid-template-columns: 217px 217px 217px;
+        grid-template-columns: repeat(3, 217px);
+        align-content: center;
+        justify-content: center;
+        height: 40vh;
     }
 }
 
@@ -130,5 +135,15 @@ header {
 }
 
 .img-portfolio {
-    max-width: 217px;
+    height: auto;
+    width: 240px;
+    object-fit: cover;
 }
+
+
+/*@media (min-width: 560px) {
+    .img-portfolio {
+        height: auto;
+        width: 100%;
+    }
+}*/
