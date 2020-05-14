@@ -7,15 +7,15 @@
 }
 
 body {
-    background-color: rgb(236, 233, 233);
+    background-color: rgb(15, 15, 15);
     background-size: auto 100vh;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    color: rgb(87, 87, 87);
+    color: rgb(225, 110, 0);
 }
 
 header {
-    height: 100vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,13 +89,46 @@ header {
     color: whitesmoke;
     text-decoration: blink;
     -webkit-animation-name: blinker;
-    -webkit-animation-duration: 0.2s;
+    -webkit-animation-duration: 0.3s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-direction: alternate;
 }
 
+.portfolio {
+    padding: 2em;
+}
+
 .portfolio h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
     text-align: center;
     line-height: 3em;
+    margin-bottom: 1em;
+    color: rgb(225, 110, 0);
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media(min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 217px 217px;
+    }
+}
+
+@media(min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns: 217px 217px 217px;
+    }
+}
+
+.portfolio figure {
+    text-align: center;
+}
+
+.img-portfolio {
+    max-width: 217px;
 }
