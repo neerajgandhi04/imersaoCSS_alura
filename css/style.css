@@ -49,6 +49,7 @@ header {
     text-decoration: none;
     font-weight: bolder;
     padding: 10px 20px;
+    transition: color .3s;
 }
 
 .menu a:hover {
@@ -145,20 +146,21 @@ header {
     height: auto;
     width: 280px;
     object-fit: cover;
-    transition: all .3s;
+    transition: .3s;
 }
 
 .img-portfolio:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .contact a {
     color: rgb(200, 200, 200);
     text-decoration: none;
-    font-size: 5em;
-    transition: 0.4s;
+    font-size: 3em;
+    transition: color 0.4s;
 }
 
+.contato a:active,
 .contact a:hover {
     color: rgb(225, 110, 0);
 }
