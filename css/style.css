@@ -27,7 +27,7 @@ header {
 }
 
 .menu {
-    background-color: #1b1b1b;
+    background-color: #252525;
     padding: 1vh;
     position: fixed;
     width: 100%;
@@ -95,11 +95,13 @@ header {
     -webkit-animation-direction: alternate;
 }
 
+.contact,
 .portfolio {
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+.contact h2,
 .portfolio h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
@@ -107,6 +109,11 @@ header {
     line-height: 3em;
     margin-bottom: 1em;
     color: rgb(225, 110, 0);
+}
+
+.portfolio figcaption {
+    font-size: 20px;
+    line-height: 3em;
 }
 
 .portfolio .grid {
@@ -117,13 +124,13 @@ header {
 
 @media(min-width: 560px) {
     .portfolio .grid {
-        grid-template-columns: 217px 217px;
+        grid-template-columns: 280px 280px;
     }
 }
 
 @media(min-width: 880px) {
     .portfolio .grid {
-        grid-template-columns: repeat(3, 217px);
+        grid-template-columns: repeat(3, 280px);
         align-content: center;
         justify-content: center;
         height: 40vh;
@@ -136,14 +143,32 @@ header {
 
 .img-portfolio {
     height: auto;
-    width: 240px;
+    width: 280px;
     object-fit: cover;
+    transition: all .3s;
 }
 
+.img-portfolio:hover {
+    transform: scale(1.2)
+}
 
-/*@media (min-width: 560px) {
-    .img-portfolio {
-        height: auto;
-        width: 100%;
-    }
-}*/
+.contact a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    font-size: 5em;
+    transition: 0.4s;
+}
+
+.contact a:hover {
+    color: rgb(225, 110, 0);
+}
+
+.contact .icons {
+    text-align: center;
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
